@@ -17,6 +17,11 @@ angular.module('flashbookApp', [
       url: '/',
       templateUrl: "app/main/main.html",
       controller: 'MainCtrl'
+
+    }).state('recipe', {
+      url: '/recipe',
+      templateUrl: "app/recipe/recipe.html",
+      controller: 'RecipeCtrl'
     });
 
 

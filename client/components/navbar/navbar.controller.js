@@ -5,7 +5,12 @@ angular.module('flashbookApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
-    }];
+    },
+      {
+        title: 'Add Recipe',
+        link: '/recipe'
+      }
+    ];
 
     $scope.isCollapsed = true;
 
