@@ -11,6 +11,9 @@ angular.module('flashbookApp', [
     $urlRouterProvider
       .otherwise('/');
 
+    // animations
+    $.material.init();
+
     $locationProvider.html5Mode(true);
 
     $stateProvider.state('main', {
@@ -18,8 +21,8 @@ angular.module('flashbookApp', [
       templateUrl: "app/main/main.html",
       controller: 'MainCtrl'
 
-    }).state('recipe', {
-      url: '/recipe',
+    }).state('main.recipe', {
+      url: 'recipe',
       templateUrl: "app/recipe/recipe.html",
       controller: 'RecipeCtrl'
     });

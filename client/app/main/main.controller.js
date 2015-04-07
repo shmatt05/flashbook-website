@@ -1,11 +1,24 @@
 'use strict';
 
 angular.module('flashbookApp')
-  .controller('MainCtrl', function ($scope, $http) {
-    $scope.awesomeThings = [];
+  .controller('MainCtrl', function ($scope, $state) {
+      console.log($state);
+      $scope.isActive = function(viewState) {
+        return $state.current.name === viewState;
+      };
 
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-    });
+      $scope.menuItems = [
+        {
+          label: 'Main',
+          url: '/',
+          state: 'main'
+        },
+        {
+          label: 'Recipe',
+          url: '/recipe',
+          state: 'main.recipe'
+        }
+      ];
+
 
   });
