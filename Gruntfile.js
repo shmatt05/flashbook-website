@@ -649,6 +649,26 @@ module.exports = function (grunt) {
     'usemin'
   ]);
 
+  grunt.registerTask('heroku', [
+    'clean:dist',
+    'injector:less',
+    'concurrent:dist',
+    'injector',
+    'wiredep',
+    'useminPrepare',
+    'autoprefixer',
+    'ngtemplates',
+    'concat',
+    'ngAnnotate',
+    'copy:dist',
+    'cdnify',
+    'cssmin',
+    'uglify',
+    'rev',
+    'usemin'
+  ]);
+
+
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
