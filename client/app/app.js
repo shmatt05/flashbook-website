@@ -26,6 +26,10 @@ angular.module('flashbookApp', [
       url: 'recipe',
       templateUrl: "app/recipe/recipe.html",
       controller: 'RecipeCtrl'
+    }).state('main.login', {
+      url: 'login',
+      templateUrl: "app/login/login.html",
+      controller: 'LoginCtrl'
     });
 
 

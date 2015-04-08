@@ -11,4 +11,16 @@
   .form-input {
     height: 70px;
   }
+
+  #origin-airport, #destination-airport  {
+    +.floating-label {
+      font-size: 40px;
+    }
+
+    &:focus {
+      +.floating-label {
+        font-size: 20px;
+      }
+    }
+  }
 }
