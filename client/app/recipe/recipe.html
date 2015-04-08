@@ -5,11 +5,28 @@
 <form id="create-recipe">
   <div id="form-container" class="well col-lg-8 center-block">
     <div class="form-group">
-      <input id="name" type="text" class="form-control floating-label form-input col-lg-9" placeholder="Name" />
+      <input id="name" type="text" class="form-control floating-label form-input" placeholder="Name" />
     </div>
     <div class="form-group">
-      <input id="description" type="text" class="form-control floating-label form-input col-lg-9" placeholder="Description" />
+      <input id="description" type="text" class="form-control floating-label form-input" placeholder="Description" />
     </div>
-
+    <div class="form-group">
+      <input id="origin-airport" type="text" class="form-control floating-label form-input" placeholder="Origin Airport" />
+    </div>
+    <div class="form-group">
+      <input id="destination-airport" type="text" class="form-control floating-label form-input" placeholder="Destination Airport" />
+    </div>
+    <div class="form-group">
+      <input id="min-date" type="text" fb-datepicker ng-model="minDate" class="form-control floating-label form-input" placeholder="Start Date" ng-init="minDate=''" />
   </div>
+    <div class="form-group">
+      <input id="max-date" type="text" fb-datepicker ng-model="maxDate" class="form-control floating-label form-input" placeholder="End Date" ng-init="maxDate=''" />
+    </div>
+    <div class="form-group">
+      <input id="min-duration" type="text" class="form-control floating-label form-input" placeholder="Minimum Duration" />
+    </div>
+    <div class="form-group">
+      <input id="max-duration" type="text" class="form-control floating-label form-input" placeholder="Maximum Duration" />
+    </div>
 </form>
+
