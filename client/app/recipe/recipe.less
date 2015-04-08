@@ -11,15 +11,19 @@
   .form-input {
     height: 70px;
   }
+  #airports-container {
+    margin-bottom: 25px;
 
-  #origin-airport, #destination-airport  {
-    +.floating-label {
-      font-size: 40px;
-    }
+    #origin-airport, #destination-airport {
 
-    &:focus {
-      +.floating-label {
-        font-size: 20px;
+      + .floating-label {
+        font-size: 40px;
+      }
+
+      &:focus {
+        + .floating-label {
+          font-size: 20px;
+        }
       }
     }
   }
