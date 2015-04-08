@@ -27,12 +27,16 @@ angular.module('flashbookApp', [
       url: '',
       templateUrl: "app/welcome/welcome.html",
       controller: 'WelcomeCtrl'
-    })
-      .state('main.recipe', {
+    }).state('main.recipe', {
         url: 'recipe',
         templateUrl: "app/recipe/recipe.html",
         controller: 'RecipeCtrl'
-      }).state('main.login', {
+      }).state('main.allrecipe', {
+        url: 'all',
+        templateUrl: "app/all-recipes/all-recipes.html",
+        controller: 'AllRecipesCtrl'
+      })
+      .state('main.login', {
         url: 'login',
         templateUrl: "app/login/login.html",
         controller: 'LoginCtrl'

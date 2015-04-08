@@ -8,15 +8,11 @@ angular.module('flashbookApp')
       };
 
       $scope.menuItems = [
+
         {
-          label: 'Main',
-          url: '/',
-          state: 'main'
-        },
-        {
-          label: 'Recipe',
-          url: '/recipe',
-          state: 'main.recipe'
+          label: 'All Recipes',
+          url: '/all',
+          state: 'main.allrecipes'
         }
       ];
 
